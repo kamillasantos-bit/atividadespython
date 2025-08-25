@@ -1,0 +1,5 @@
+a = int(input("digite 1 numero: "))
+b = int(input("digite 1 numero: "))
+c = int(input("digite 1 numero: "))
+soma = (a+b+c)
+print("Asoma é:",(soma))
