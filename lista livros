@@ -1,0 +1,83 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMAKSwv+gRwU9vo/iL7X5Dh",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kamillasantos-bit/atividadespython/blob/main/lista%20livros\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wKVeY-30hulZ",
+        "outputId": "157f207e-cfd5-4682-9dc1-b4e819e97216"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['O Quinze', 'Cinco Minutos', 'O Pequeno Príncipe']\n",
+            "Primeiro livro: O Quinze\n",
+            "Último livro: O Pequeno Príncipe\n",
+            "['O Quinze', 'Cinco Minutos', 'O Pequeno Príncipe', 'Barquinhos de papel', 'Textos para tocar cicatrizes']\n",
+            "['O Quinze', 'Duna', 'Cinco Minutos', 'O Pequeno Príncipe', 'Barquinhos de papel', 'Textos para tocar cicatrizes']\n",
+            "Livro não encontrado\n",
+            "['O Quinze', 'Duna', 'Cinco Minutos', 'O Pequeno Príncipe', 'Barquinhos de papel', 'Textos para tocar cicatrizes']\n"
+          ]
+        }
+      ],
+      "source": [
+        "Livros = [\"O Quinze\", \"Cinco Minutos\", \"O Pequeno Príncipe\"]\n",
+        "\n",
+        "print(Livros)\n",
+        "\n",
+        "#primeiro e o último elemento\n",
+        "print(\"Primeiro livro:\", Livros[0])\n",
+        "print(\"Último livro:\", Livros[2])\n",
+        "\n",
+        "\n",
+        "#adicionando dois livros\n",
+        "Livros.append(\"Barquinhos de papel\")\n",
+        "Livros.append(\"Textos para tocar cicatrizes\")\n",
+        "\n",
+        "print(Livros)\n",
+        "\n",
+        "Livros.insert(1, \"Duna\")\n",
+        "\n",
+        "print(Livros)\n",
+        "\n",
+        "if \"Silêncio dos inocentes\" in Livros:\n",
+        "    Livros.remove(\"Silêncio dos inocentes\")\n",
+        "else:\n",
+        "    print(\"Livro não encontrado\")\n",
+        "\n",
+        "print(Livros)"
+      ]
+    }
+  ]
+}
